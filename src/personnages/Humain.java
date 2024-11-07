@@ -13,8 +13,14 @@ public class Humain {
 	}
 		
 	public void parler(String texte) {
-
+		System.out.println("(" + nom + ") - " + texte);
 	}
 
-
+	public void direBonjour() {
+		parler("Bonjour ! Je m'appele" + nom +", j'aime boire du " + boisson + "et j'ai "+ argent + "euros en poche.");
+	}
+	
+	public void boire() {
+		parler("Mmmm, un bon verre de " + boisson + " ! GLOUPS !");
+	}
 }
